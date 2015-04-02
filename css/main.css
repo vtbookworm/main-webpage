@@ -177,6 +177,31 @@ PAGE: CONTACT
   font-size:: 0.9em;
 }
 
+/**************************
+PAGE: RESUME PREVIEW
+***************************/
+.preview {
+	background-color: rgb(106, 180, 123);
+	border: 2px solid rgb(89, 154, 104);
+	height: 500px;
+	width: 700px;
+	color: black;
+	margin: 10px;
+	
+}
+
+.preview-text {
+	font-family: 'Changa One', sans-serif;
+	font-size: 85px;
+	text-align: center;
+	margin: 300px, 150px;
+	padding: 150px;
+}
+
+#rubycode {
+	padding: 130px;
+}
+
 
 /**************************
 COLORS
