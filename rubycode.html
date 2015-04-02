@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Skillcrush 102 - Fun With JavaScript Events" />
+  <title>Vicki Greer | Ruby Code Sample</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/rubycode.css">
+</head>
+<body>
+
+    <header>
+      <a href="index.html" id="logo">
+        <h1>Vicki Greer</h1>
+        <h2>Developer</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        
+        
+        </ul>
+      </nav>
+    </header>
+	<div id="rubycode">
+		<h1 class="headline">Ruby Code Sample</h1>
+		<pre>
+		<code>
+		
+#------------------------------------------
+#
+# Simple blog application
+#
+# This is a simple blog application written 
+# to demonstrate the use of Ruby objects.  
+# It will allow the user to create and name  
+# a blog, write entries to that blog, and 
+# print the blog to the screen.  The 
+# application only allows one paragraph per 
+# blog entry, and does not store the entries 
+# to a file or database.
+#
+# Blog entries are displayed in 
+# chronological order.
+#
+#------------------------------------------
+
+
+class Blog
+attr_accessor :title, :date_created, :blog_author
+	
+	#------------------------------------------
+	# Initialize blog
+	#------------------------------------------
+
+	def initialize
+		puts "Let's create a new blog!  Enter a name for your blog: "
+		@title = gets.chomp
+		puts "Enter your name as the creator of this blog: "
+		@blog_author = gets.chomp
+		@date_created = timestamp
+		@blog_hash = {}
+		@num_entries = 0
+	end
+	
+	#------------------------------------------
+	# Create a new blog entry
+	#------------------------------------------
+
+	def entry_create
+		#puts "In entry_create function"
+		new_timestamp = timestamp
+		new_entry = Blog_entry.new(new_timestamp)
+		@blog_hash.store(new_timestamp, new_entry)
+		@num_entries += 1
+	end
+		
+	#------------------------------------------
+	# Print the blog entries in chronological
+	# order
+	#------------------------------------------
+
+	def blog_print
+		print "\n"
+		puts "There are currently #{@num_entries} entries in the blog."
+		@blog_hash.each{|key, value| 
+			25.times do |i|
+				print "_"
+			end
+			print "\nOn ", key, " "
+			b_entry = value
+			print b_entry.author, " wrote: \n\n"
+			print b_entry.title.upcase, "\n\n"
+			print b_entry.content, "\n\n\n"
+		}
+	end
+	
+end
+
+class Blog_entry 
+attr_accessor :title, :author, :datetime, :content
+
+	#------------------------------------------
+	# Initialize a blog entry
+	#------------------------------------------
+
+	def initialize(time_stamp)
+		puts "\nPlease enter a title for your blog post:"
+		@title = gets.chomp.capitalize
+		puts "\nPlease enter your name as the author of the post:"
+		@author = gets.chomp
+		puts "\nEnter the content for the blog post:"
+		@content = gets.chomp
+		@createdate = time_stamp
+	end
+	
+end	
+
+#------------------------------------------
+# function timestamp
+#
+# Purpose: Converts times to GMT to keep 
+# entries from different users in different
+# time zones in chronological order
+#------------------------------------------
+def timestamp
+	t = Time.new
+	t.gmtime
+	return t
+end
+
+#------------------------------------------
+# Main
+#------------------------------------------
+
+quit = false
+blog = Blog.new
+while (! quit)	
+	puts "\nWould you like to create a new blog entry (Y/N/Q)?"		
+	answer = gets.chomp.upcase
+	if (answer == 'Y')
+		blog.entry_create
+	elsif (answer == 'N')
+		puts "\nWould you like to view the entire blog (Y/N/Q)?"
+		answer = gets.chomp.upcase
+		if (answer == 'Y')
+			puts "\n\n#{blog.title}, created on #{blog.date_created} by #{blog.blog_author}.\n\n"
+			blog.blog_print
+		elsif (answer == 'Q')
+			quit = true
+		else
+			puts "\nThose are the only available actions. Type 'Y' to see them again, or 'N' or 'Q' to quit.(Y/N/Q)?"
+			answer = gets.chomp.upcase
+			if (answer != "Y")
+				quit = true
+			end
+		end
+	elsif (answer == 'Q')
+		quit = true
+	end
+end
+
+		</code>
+		</pre>
+	
+	
+	</div>
+    <footer>
+        <a href="http://twitter.com/intent/tweet?screen_name=vickig_vt">
+          <img src="imgs/twitter-wrap.png" alt="twitter logo" class="social-icon">
+        </a>
+        <a href="http://www.facebook.com/profile.php?id=100004812998624">
+          <img src="imgs/facebook-wrap.png" alt="facebook logo" class="social-icon">
+        </a>
+        <p>&copy; 2015 Vicki Greer.</p>
+    </footer>	
+</body>
+</html>

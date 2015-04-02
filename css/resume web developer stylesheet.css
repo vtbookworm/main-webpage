@@ -1,0 +1,102 @@
+body  {
+        font-family:Helvetica, Arial, sans serif;
+		max-width: 960px;
+}
+
+div  {
+        border-radius: 5px;
+        margin: 20px;
+}
+p  {
+        margin: 10px;
+        padding: 10px 5px 5px 5px;
+        border-radius: 5px;
+		font-size: 20px;
+}
+li {
+	font-size: 18px;
+}
+table {
+        margin: 20px;
+        width: 960px;
+		border-collapse: collapse;
+}
+td  {
+        border: 2px solid black;
+		border-collapse: collapse;
+        
+}
+.education {
+	border: none;
+	margin: 0 20px;
+}
+
+#header  {
+        /* border: 2px solid black;
+        background-color: #cccccc; */
+        height:160px;
+        width: 960px;
+}
+.left  {
+        margin: 10px;
+        width: 35%;
+        float:left;
+        position: relative;
+		clear: both;
+}
+.right  {
+        margin: 10px 0 10px 10px;
+        width: 60%;
+        float: right;
+       }
+.company {
+	font-weight: bold;
+}
+
+.jobtitle {
+	font-weight: bold;
+	font-style: italic;
+}
+#footer  {
+        position:relative;
+        /* margin: 20px; */
+        /* border: 2px solid green; */
+        float:none;
+        clear:both;
+}
+#mainname  {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+#mainaddress  {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.sectionhead  {
+    border: 2px solid black;
+    background-color: lightblue;
+    height: 30px;
+    width: 960px;
+	position: relative;
+	clear: both;
+}
+
+#skillcrush {
+	float: left;
+	width: 40%;
+	margin: 0;
+}
+
+#mtsu {
+	float: left;
+	width: 35%;
+	margin: 0;
+}
+
+#earlham {
+	float: left;
+	width: 25%;
+	margin: 0;
+}

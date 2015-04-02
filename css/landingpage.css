@@ -1,0 +1,242 @@
+/* Cross Browser Compatability CSS */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+
+/* Write your CSS styles here */
+body {
+	background: url("http://www.builtbyvicki.com/images/road_home_smaller.jpg") repeat fixed center center / cover  rgba(0, 0, 0, 0);
+	font-family: 'Droid Sans', Arial, sans-serif;
+	color:  navy;
+}
+
+h1 {
+	font-family:'Lobster Two', Arial, sans-serif;
+	font-size: 50px;
+	margin-top: 20px;
+  margin-bottom: 10px;
+	font-weight:  bold;
+	color: #003300;
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 15px;
+}
+
+h6 {
+	font-size: 13px;
+}
+#name {
+	font-family: 'Lobster', Copperplate Gothic Light, Arial, sans-serif;
+}
+
+p {
+	font-size: 16px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+a:link {
+/*	color: #00FF2B; */
+	color: green;
+	text-decoration: none;
+}
+a:visited {
+	color: green;
+	text-decoration: none;
+}
+a:hover {
+	color: green;
+	text-decoration: underline;
+}
+.main {
+	height: 520px;
+	width: 375px;
+	top: 300px;
+	float: left;
+	background-color: rgba(255, 235, 133, 0.9);
+	color: #003300;
+	border-radius: 0 8px 8px 0;
+	margin-top: 36px;
+}
+#title {
+	color: #003300;
+	background-color: #FFCC00;  
+	border-radius: 8px 0px 0px 8px;
+	margin-left: 20px;
+}
+#social {
+    position: relative;
+	margin-left:  20px;
+}
+
+#social li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+#social li, #social a {
+    height: 30px;
+    display: block;
+}
+
+#instagram {
+    left: 0px;
+    width: 30px;
+    background: url('http://www.builtbyvicki.com/images/social.png') 0 0;
+}
+
+#twitter {
+    left: 33px;
+    width: 33px;
+    background: url('http://www.builtbyvicki.com/images/social.png') repeat scroll -30px 0 rgba(0, 0, 0, 0);
+}
+
+#dribbble {
+    left: 71px;
+    width: 31px;
+    background: url('http://www.builtbyvicki.com/images/social.png') repeat scroll -64px 0 rgba(0, 0, 0, 0);
+}
+#instagram a:hover {
+    background: url('http://www.builtbyvicki.com/images/social.png') repeat scroll 0 -31px rgba(0, 0, 0, 0);
+}
+
+#twitter a:hover {
+    background: url('http://www.builtbyvicki.com/images/social.png') repeat scroll -30px -31px rgba(0, 0, 0, 0);
+}
+
+#dribbble a:hover {
+    background: url('http://www.builtbyvicki.com/images/social.png') repeat scroll -64px -31px rgba(0, 0, 0, 0);
+}
+
+#clockSection {
+    float: right;
+    font-size: 16px;
+    margin-right: 30px;
+}
+	
+#SignUp {
+  clear: both;
+  margin: 37px auto 30px 50px;
+  background-color: darkblue;
+  color: #FFCC00;
+  border: 2px solid darkblue;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+}
+
+#modal-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  height: 100%;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+ 
+#modal-box {
+  background-color: rgba(255, 235, 133, 1.0);
+  color: darkblue;
+  border-radius: 10px;
+  border: 3px solid darkblue;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 480px;
+}
+
+#modal-hide {
+  float: right;
+  border-radius: 100%;
+  margin-top: -15px;
+  background-color: white;
+  margin-right: -15px;
+}
+
+#newsletter-header {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#newemail {
+  margin: 0px 20px 20px 110px; 
+  border: 1px solid darkblue;
+  border-radius: 5px;
+  color: black;
+}
+
+#btnSubmit {
+  margin: 0px 0px 20px 0px;
+  background-color: darkblue;
+  color: #FFCC00;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: Arial, sans-serif;
+}
+

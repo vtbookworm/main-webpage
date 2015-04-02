@@ -1,0 +1,41 @@
+body {
+	/* background-color: gold; */
+	color: darkblue;
+	max-width: 900px;
+	font-family: Arial, sans-serif;
+}
+
+.dragon {
+	color: darkblue;
+	margin: 20px;
+	text-align: center;
+}
+
+#game {
+	top: 200px;
+	margin: 20px;
+	padding: 20px;
+	clear: both;
+	border: 4px ridge #599a68;
+}	
+
+#modal-popup {
+  display: none;
+  border: 2px solid #599a68;
+  margin: 5px;
+  padding: 5px;
+}
+
+#closeInstructions {
+  float: right;
+}
+#titleInstructions {
+  float: left;
+}
+
+#para1 {
+  clear: both;
+}
+#fight {
+  display: none;
+}

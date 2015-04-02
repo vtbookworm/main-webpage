@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Skillcrush 102 - Fun With JavaScript Events" />
+  <title>Vicki Greer | Dragon Game</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/dragon.css">
+</head>
+<body>
+
+    <header>
+      <a href="index.html" id="logo">
+        <h1>Vicki Greer</h1>
+        <h2>Developer</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        
+        
+        </ul>
+      </nav>
+    </header>
+
+
+	<div id="game">
+  
+		<h1 class="dragon">Let's play a game with dragons.</h1>
+		<button id="getInstructions">Get Instructions</button>
+		<div id="modal-popup">
+			<p id="titleInstructions">INSTRUCTIONS</p>
+			<button id="closeInstructions">X</button>
+			<p id="para1">Picking up the sword makes the dragon angry.</p>
+			<p>Each time you swing the sword, you have an equally random chance of hitting or missing the dragon.  If you miss the dragon, he wins.</p>
+			<p>If you hit the dragon, you inflict damage equal to one to five points.  Four points' worth of damage kills the dragon.
+		</div> <!--modal-->
+		<p id="maintext1">You are wandering through the forest, minding your own business, when you reach a meadow.  You notice a sword and a few pieces of debris that might once have been armor near the center of the clearing.</p>  
+		<p id="maintext2">Suddenly, a dragon swoops through the air, hovering menacingly over the meadow.  What do you do?</p>
+
+		<button id="getSword">Pick up the sword</button>
+		<button id="fight">Hit the dragon!</button>
+		<button id="run">Run away</button>
+		<button id="startOver">Start another game</button>
+		<p id="txtResponse1"></p>
+		<p id="txtResponse2"></p>
+	</div>
+	
+	<footer>
+        <a href="http://twitter.com/intent/tweet?screen_name=vickig_vt">
+          <img src="imgs/twitter-wrap.png" alt="twitter logo" class="social-icon">
+        </a>
+        <a href="http://www.facebook.com/profile.php?id=100004812998624">
+          <img src="imgs/facebook-wrap.png" alt="facebook logo" class="social-icon">
+        </a>
+        <p>&copy; 2015 Vicki Greer.</p>
+    </footer>
+    <script src="js/dragon.js"></script>
+</body>
+</html>

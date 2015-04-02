@@ -1,0 +1,167 @@
+/* Cross Browser Compatability CSS */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+
+/* Write your CSS styles here */
+body {
+	background: url("../imgs/Skillcrush_Computer.jpg") repeat fixed center center / cover  rgba(0, 0, 0, 0);
+	font-family: Times New Roman,Arial,sans-serif;
+	color:  navy;
+}
+
+h1 {
+	font-size: 50px;
+	margin: 20px;
+	font-weight:  bold;
+	color: navy;
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: bold;
+	margin: 15px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 15px;
+}
+
+h6 {
+	font-size: 13px;
+}
+
+p {
+	font-size: 18px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+a:link {
+/*	color: #00FF2B; */
+	color: green;
+	text-decoration: none;
+}
+a:visited {
+	color: green;
+	text-decoration: none;
+}
+a:hover {
+	color: green;
+	text-decoration: underline;
+}
+.main {
+	height: 446px;
+	width: 410px;
+	top: 300px;
+	float: right;
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 3px 0 0 3px;
+	margin-top: 36px;
+}
+#title {
+	color: white;
+	background-color: #C1BCC2;  
+	border-radius: 5px 0px 0px 5px;
+	margin-left: 20px;
+}
+#social {
+    position: relative;
+	margin-left:  20px;
+}
+
+#social li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+#social li, #social a {
+    height: 30px;
+    display: block;
+}
+
+#instagram {
+    left: 0px;
+    width: 30px;
+    background: url('../imgs/social.png') 0 0;
+}
+
+#twitter {
+    left: 33px;
+    width: 33px;
+    background: url('../imgs/social.png') repeat scroll -30px 0 rgba(0, 0, 0, 0);
+}
+
+#dribbble {
+    left: 71px;
+    width: 31px;
+    background: url('../imgs/social.png') repeat scroll -64px 0 rgba(0, 0, 0, 0);
+}
+#instagram a:hover {
+    background: url('../imgs/social.png') repeat scroll 0 -31px rgba(0, 0, 0, 0);
+}
+
+#twitter a:hover {
+    background: url('../imgs/social.png') repeat scroll -30px -31px rgba(0, 0, 0, 0);
+}
+
+#dribbble a:hover {
+    background: url('../imgs/social.png') repeat scroll -64px -31px rgba(0, 0, 0, 0);
+}
+	
